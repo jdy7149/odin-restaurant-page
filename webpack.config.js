@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { watch } = require('fs');
 
 module.exports = {
-    module: 'development',
+    mode: 'development',
     entry: './src/index.js',
     output: {
         filename: 'main.js',
