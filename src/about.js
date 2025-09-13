@@ -2,6 +2,7 @@ export default function () {
     const contentDiv = document.querySelector('#content');
 
     const container = document.createElement('div');
+    container.classList.add('about-container');
 
     const h1 = document.createElement('h1');
     h1.textContent = 'About Us';

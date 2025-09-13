@@ -1,0 +1,85 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: url('../img/background.jpg') no-repeat center;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    padding: 16px 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+nav button {
+    padding: 8px 32px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+nav button:hover {
+    transform: scale(1.05);       
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+nav button.selected {
+    background-color: darkred;
+    color: white;
+}
+
+#content {
+    flex: 1;
+}
+
+.home-container, .about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-container h1, .about-container h1 {
+    background-color: rgba(99, 2, 34, 0.74);
+    padding: 8px 28px;
+    border-radius: 16px;
+    color: white;
+}
+
+.home-container p, .about-container p {
+    width: 65ch;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    margin: 36px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 16px;
+    padding: 24px;
+    width: 65ch;
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.card ul {
+    list-style-type: circle;
+    font-size: 1.1rem;
+}

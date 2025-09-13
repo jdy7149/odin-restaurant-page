@@ -6,6 +6,7 @@ class MenuCard {
 
     createCard() {
         const card = document.createElement('div');
+        card.classList.add('card');
 
         const h2 = document.createElement('h2');
         h2.textContent = this.header;
@@ -28,6 +29,7 @@ export default function () {
     const contentDiv = document.querySelector('#content');
 
     const container = document.createElement('div');
+    container.classList.add('menu-container');
 
     const cards = [
         new MenuCard('Appetizer',

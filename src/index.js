@@ -12,12 +12,15 @@ import renderAbout from './about.js';
         about: renderAbout,
     };
 
-    document.querySelectorAll('nav > button').forEach(btn => btn.addEventListener('click', evt => {
-        const id = evt.target.id;
+    document.querySelectorAll('nav > button').forEach(btn => btn.addEventListener('click', () => {
+        document.querySelectorAll('nav > button').forEach(btn => btn.classList.remove('selected'));
 
+        const id = btn.id;
         handlers[id]?.();
+        btn.classList.add('selected');
     }));
 
+    document.querySelector('#home').classList.add('selected');
     handlers.home();
 
 })();

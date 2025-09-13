@@ -2,6 +2,7 @@ export default function () {
     const contentDiv = document.querySelector('#content');
 
     const container = document.createElement('div');
+    container.classList.add('home-container');
 
     const title = document.createElement('h1');
     title.textContent = 'Welcome to My Restaurant';
