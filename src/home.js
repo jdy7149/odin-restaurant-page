@@ -11,5 +11,5 @@ export default function () {
 
     container.appendChild(title);
     container.appendChild(p);
-    contentDiv.appendChild(container);
+    contentDiv.replaceChildren(container);
 };
